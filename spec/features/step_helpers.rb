@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 def login_admin
-  admin = create(:admin_user, email: 'integrations@bitpay.com')
+  admin = create(:admin_user, email: 'integrations@globee.com')
   visit spree.admin_login_path
   fill_in 'Email', with: admin.email
   fill_in 'Password', with: 'secret'

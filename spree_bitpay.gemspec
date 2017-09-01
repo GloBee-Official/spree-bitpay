@@ -7,12 +7,12 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_bitpay'
   s.version     = SpreeBitpay::VERSION
-  s.summary     = 'Accept bitcoin with BitPay'
-  s.description = 'BitPay connector for the Spree shopping cart'
+  s.summary     = 'Accept bitcoin with GloBee'
+  s.description = 'GloBee connector for the Spree shopping cart'
   s.required_ruby_version = '>= 2.0.0'
 
-   s.author    = 'Bitpay Integrations'
-   s.email     = 'integrations@bitpay.com'
+   s.author    = 'GloBee Integrations'
+   s.email     = 'integrations@globee.com'
   # s.homepage  = 'http://www.spreecommerce.com'
 
   #s.files       = `git ls-files`.split("\n")

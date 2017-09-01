@@ -59,7 +59,7 @@ module Spree
     end
 
     def order_is_complete!
-      raise "Unable to complete. Order: #{order.number} receive unexpected BitPay ipn for payment #{number}" unless order.complete?
+      raise "Unable to complete. Order: #{order.number} receive unexpected GloBee ipn for payment #{number}" unless order.complete?
     end
   end
 end

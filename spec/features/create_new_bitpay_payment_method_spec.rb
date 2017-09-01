@@ -1,12 +1,12 @@
 require 'spec_helper'
 require 'features/step_helpers'
 
-feature "Creating a new BitPay Payment Method", js: true, type: :feature do
+feature "Creating a new GloBee Payment Method", js: true, type: :feature do
   scenario "has a dropdown with 'test' and 'live' options" do
     login_admin
     create_new_payment_method "Bitcoin", "Spree::PaymentMethod::BitPayment"
-    expect(page).to have_selector('#bitpay_api_uri option[value="https://bitpay.com"]'), "No livenet dropdown"
-    expect(page).to have_selector('#bitpay_api_uri option[value="https://test.bitpay.com"]'), "No testnet dropdown"
+    expect(page).to have_selector('#bitpay_api_uri option[value="https://globee.com"]'), "No livenet dropdown"
+    expect(page).to have_selector('#bitpay_api_uri option[value="https://test.globee.com"]'), "No testnet dropdown"
   end
   
   scenario 'the user is logged out of bitpay' do
@@ -14,14 +14,14 @@ feature "Creating a new BitPay Payment Method", js: true, type: :feature do
     create_new_payment_method "Bitcoin", "Spree::PaymentMethod::BitPayment"
     old_url = current_url
     select("Development", from: "bitcoin_network")
-    find_button("Connect To BitPay").click()
+    find_button("Connect To GloBee").click()
     expect(current_url).to match(/#{ENV['BPDEVSERVER']}\/api-access-request\?pairingCode=[a-zA-Z0-9]{7}&redirect=#{old_url}/)
   end
   
-  scenario "The form is exclusive to BitPay PaymentMethod" do
+  scenario "The form is exclusive to GloBee PaymentMethod" do
     login_admin
     create_new_payment_method "Not Bitcoin", "Spree::Gateway::Bogus"
-    expect(page).not_to have_selector('#bitpay_api_uri option[value="https://bitpay.com"]'), "Livenet dropdown"
+    expect(page).not_to have_selector('#bitpay_api_uri option[value="https://globee.com"]'), "Livenet dropdown"
   end
   
   scenario "The payment method is not authenticated" do
