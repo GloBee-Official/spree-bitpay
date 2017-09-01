@@ -6,9 +6,7 @@ If you are interested in becoming a maintainer of this project, please contact u
 
 # GloBee plugin for Spree Commerce
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/bitpay/spree-bitpay/master/LICENSE.txt)
-[![Gem](https://img.shields.io/gem/v/spree_bitpay.svg?style=flat-square)](https://rubygems.org/gems/spree_bitpay)
-[![Coveralls](https://img.shields.io/coveralls/bitpay/spree-bitpay.svg?style=flat-square)](https://coveralls.io/r/bitpay/spree-bitpay)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/GloBee-Official/spree-bitpay/master/LICENSE.txt)
 
 GloBee Payments connector for SpreeCommerce 3.0.x RoR storefront.  Accept bitcoin payments with ZERO fees.  Choose remittance in your local currency or take a percentage in BTC.  
 
