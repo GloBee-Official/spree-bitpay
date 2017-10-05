@@ -2,7 +2,7 @@
 
 This is a Community-supported project.
 
-If you are interested in becoming a maintainer of this project, please contact us at integrations@globee.com. Developers at BitPay will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
+If you are interested in becoming a maintainer of this project, please contact us at integrations@globee.com. Developers at Globee will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
 
 # GloBee plugin for Spree Commerce
 
@@ -29,7 +29,7 @@ For development and testing against the bitcoin testnet, sign up at https://test
 Add this line to your application's Gemfile:
 
     gem 'bitpay-rails', gem 'bitpay-rails', require: 'bit_pay_rails'
-    gem 'spree_bitpay', :git => 'https://github.com/bitpay/spree-bitpay.git'
+    gem 'spree_bitpay', :git => 'https://github.com/GloBee-Official/spree-bitpay.git'
 
 And then execute:
 
